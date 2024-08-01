@@ -5,7 +5,5 @@
 [build.environment]
   NODE_ENV = "production"
   NPM_FLAGS = "--legacy-peer-deps"
-
-[context.production.environment]
   NODE_VERSION = "18.20.4"
   NPM_VERSION = "10.7.0"
