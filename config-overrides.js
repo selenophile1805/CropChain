@@ -1,6 +1,3 @@
-// This file is included to deal with issues regarding react-scripts v5.0.0 and web3
-// Provided from Web3 documentation -> https://github.com/ChainSafe/web3.js#troubleshooting-and-known-issues
-
 const webpack = require('webpack');
 
 module.exports = function override(config) {
@@ -21,5 +18,6 @@ module.exports = function override(config) {
             Buffer: ['buffer', 'Buffer']
         })
     ])
+    config.resolve.extensions = [...config.resolve.extensions, ".ts", ".js"]
     return config;
 }
